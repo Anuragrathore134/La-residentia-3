@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Heights | Premium Residential Apartments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!-- Sticky Header Section -->
+    <div class="sticky-header">
+        <div class="header-top">
+            <div class="container header-content">
+                <div class="logo">
+                    <i class="fas fa-building logo-icon"></i>
+                    <h1>Luxury Heights</h1>
+                </div>
+                <div class="contact-number">
+                    <i class="fas fa-phone"></i> +1 (123) 456-7890
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="header-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#overview" class="active">Overview</a></li>
+                    <li><a href="#floor-plans">Floor Plans</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner Section with Enquiry Form -->
+    <section class="banner">
+        <div class="container banner-container">
+            <div class="banner-content">
+                <h2>Experience Luxury Living</h2>
+                <p>Premium 2, 3 & 4 BHK apartments with modern amenities, located in the heart of the city. Starting at $459,000.</p>
+                <ul>
+                    <li>24/7 Security</li>
+                    <li>Swimming Pool & Gym</li>
+                    <li>Landscaped Gardens</li>
+                    <li>Parking Facilities</li>
+                </ul>
+            </div>
+            <div class="enquiry-form">
+                <h3>Request Information</h3>
+                <form id="banner-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">I'm Interested In</label>
+                        <select id="interest">
+                            <option value="2bhk">2 BHK Apartment</option>
+                            <option value="3bhk">3 BHK Apartment</option>
+                            <option value="4bhk">4 BHK Apartment</option>
+                            <option value="penthouse">Penthouse</option>
+                        </select>
+                    </div>
+                    <button type="submit">Submit Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <h2 class="section-title">Property Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>About Luxury Heights</h3>
+                    <p>Luxury Heights is a premium residential project that offers meticulously designed apartments with high-end finishes and modern amenities. Our focus is on creating a harmonious living environment that combines luxury, comfort, and convenience.</p>
+                    <p>Each apartment features spacious rooms, large windows for natural light, high-quality flooring, modern kitchen fixtures, and elegant bathrooms. The project is designed by acclaimed architects with attention to every detail.</p>
+                    <p>With 360 units spread across 3 towers, Luxury Heights offers a selection of 2, 3, and 4 bedroom apartments along with exclusive penthouses.</p>
+                </div>
+                <div class="overview-features">
+                    <h3>Key Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <h4>Swimming Pool</h4>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h4>Fitness Center</h4>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <h4>Landscaped Gardens</h4>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>24/7 Security</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plans Section -->
+    <section id="floor-plans" class="floor-plans">
+        <div class="container">
+            <h2 class="section-title">Floor Plans</h2>
+            <div class="plans-container">
+                <div class="plan-thumbnail" onclick="openModal()">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="2 BHK Floor Plan">
+                    <div class="plan-info">
+                        <h3>2 BHK Apartment</h3>
+                        <p>950 Sq.Ft.</p>
+                    </div>
+                </div>
+                <div class="plan-thumbnail" onclick="openModal()">
+                    <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="3 BHK Floor Plan">
+                    <div class="plan-info">
+                        <h3>3 BHK Apartment</h3>
+                        <p>1250 Sq.Ft.</p>
+                    </div>
+                </div>
+                <div class="plan-thumbnail" onclick="openModal()">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="4 BHK Floor Plan">
+                    <div class="plan-info">
+                        <h3>4 BHK Apartment</h3>
+                        <p>1650 Sq.Ft.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Floor Plan Enquiry -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Floor Plan Enquiry</h2>
+            <form id="modal-form">
+                <div class="form-group">
+                    <label for="modal-name">Full Name</label>
+                    <input type="text" id="modal-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email</label>
+                    <input type="email" id="modal-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Phone</label>
+                    <input type="tel" id="modal-phone" placeholder="Your Phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-plan">Selected Plan</label>
+                    <input type="text" id="modal-plan" value="2 BHK Apartment" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="modal-message">Message</label>
+                    <textarea id="modal-message" placeholder="Any specific requirements?" rows="3"></textarea>
+                </div>
+                <button type="submit">Request Details</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">Location</h2>
+            <p>Luxury Heights is strategically located in the thriving downtown district, with easy access to business centers, shopping malls, schools, and hospitals.</p>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425872426607!3d40.74076987932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c8eef01%3A0x41c84c6d4edbbf57!2sMadison%20Avenue%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1689090317913!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="location-features">
+                <div class="location-card">
+                    <h4><i class="fas fa-shopping-cart"></i> Shopping</h4>
+                    <p>5 minutes from Downtown Mall with 200+ stores and entertainment options.</p>
+                </div>
+                <div class="location-card">
+                    <h4><i class="fas fa-school"></i> Education</h4>
+                    <p>Reputed schools and colleges within 2km radius.</p>
+                </div>
+                <div class="location-card">
+                    <h4><i class="fas fa-hospital"></i> Healthcare</h4>
+                    <p>24/7 multi-specialty hospital just 10 minutes away.</p>
+                </div>
+                <div class="location-card">
+                    <h4><i class="fas fa-train"></i> Transportation</h4>
+                    <p>Easy access to metro station and main bus terminal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Living Room">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1727183904698-7a7963066170?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fG11ZHVsYXIlMjBraXRjaGVufGVufDB8fDB8fHww" alt="Modern Kitchen">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Building Exterior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1675745329659-29044cb6adbb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Swimming Pool">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Apartment Bedroom">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Bathroom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Luxury Heights</h3>
+                    <p>Premium residential apartments designed for modern living with luxury amenities and convenient location.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#floor-plans">Floor Plans</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, Downtown</li>
+                        <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@luxuryheights.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Office Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 9am - 6pm</li>
+                        <li>Saturday: 10am - 4pm</li>
+                        <li>Sunday: By Appointment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Luxury Heights. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Modal functionality
+        function openModal() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+        
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+        
+        // Form submission handling
+        document.getElementById('banner-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your enquiry! We will contact you shortly.');
+            this.reset();
+        });
+        
+        document.getElementById('modal-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your interest! We will send the floor plan details to your email.');
+            closeModal();
+        });
+        
+        // Update modal form based on clicked plan
+        const planThumbnails = document.querySelectorAll('.plan-thumbnail');
+        planThumbnails.forEach(plan => {
+            plan.addEventListener('click', function() {
+                const planTitle = this.querySelector('h3').textContent;
+                document.getElementById('modal-plan').value = planTitle;
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+                
+                // Update active class
+                document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Update active nav link on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
