@@ -1,0 +1,21 @@
+cript>
+    // Contact Form Submission
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Our team will contact you shortly.');
+    });
+
+    // Navbar Background Change on Scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+
+      if(window.scrollY > 50) {
+        nav.style.background = '#111';
+      } else {
+        nav.style.background = 'rgba(0,0,0,0.85)';
+      }
+    });
+  </script>
+
+</body>
+</html>
