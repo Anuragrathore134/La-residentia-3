@@ -1,4 +1,7 @@
+/* ===== Body ===== */
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background: url('https://pixabay.com/images/download/x-3012528_1920.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -6,5 +9,83 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
+}
+
+/* ===== Login Container ===== */
+.login-container {
+    width: 350px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* ===== Heading ===== */
+.login-container h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* ===== Labels ===== */
+.form-group label {
+    display: block;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* ===== Input Fields ===== */
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* ===== Login Button ===== */
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form-group input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* ===== Forgot Password ===== */
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
 }
