@@ -1,26 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
 body{
-    font-family:Arial;
-    background:#f4f4f4;
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(7,24,50,0.75),
+        rgba(7,24,50,0.75)
+    ),
+    url("image.png");
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.left-panel{
+    color:white;
+    width:40%;
+}
+
+.left-panel h1{
+    font-size:60px;
+    letter-spacing:2px;
+}
+
+.left-panel h3{
+    color:#d9b16f;
+    margin-bottom:40px;
+}
+
+.left-panel h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.left-panel p{
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+.features{
+    display:flex;
+    gap:50px;
+    font-size:20px;
 }
 
 .login-box{
-    width:350px;
-    margin:100px auto;
+    width:500px;
     background:white;
-    padding:20px;
-    border-radius:10px;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
 }
 
-input{
+.login-box h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#12335b;
+}
+
+.login-box span{
+    color:#c99d57;
+}
+
+.input-box{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.input-box i{
+    position:absolute;
+    left:15px;
+    top:15px;
+    color:#777;
+}
+
+.input-box input{
     width:100%;
-    padding:10px;
-    margin:10px 0;
+    padding:15px 15px 15px 45px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#12335b;
 }
 
 button{
     width:100%;
-    padding:10px;
-    background:#0066ff;
-    color:white;
+    padding:15px;
     border:none;
+    border-radius:8px;
+    background:#0d2d56;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.divider{
+    text-align:center;
+    margin:20px 0;
+    color:#666;
+}
+
+.google-btn{
+    background:white;
+    color:#12335b;
+    border:1px solid #ccc;
+}
+
+@media(max-width:991px){
+
+.container{
+    flex-direction:column;
+}
+
+.left-panel{
+    width:100%;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.login-box{
+    width:100%;
+    max-width:500px;
+}
 }
