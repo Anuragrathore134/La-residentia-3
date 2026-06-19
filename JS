@@ -1,22 +1,13 @@
-@RestController
-@RequestMapping("/attendance")
-public class AttendanceController {
+function login() {
 
-    @Autowired
-    private AttendanceRepository attendanceRepository;
+let username = document.querySelector("input[type='text']").value;
+let password = document.querySelector("input[type='password']").value;
 
-    @PostMapping("/checkin")
-    public String checkIn(@RequestBody Attendance attendance){
-        attendance.setCheckIn(LocalTime.now());
-        attendanceRepository.save(attendance);
-        return "Checked In Successfully";
-    }
+if(username === "admin" && password === "admin123"){
+    window.location.href = "index.html";
+}
+else{
+    alert("Invalid Login");
+}
 
-    @PostMapping("/checkout")
-    public String checkOut(@RequestParam Long id){
-        Attendance attendance = attendanceRepository.findById(id).get();
-        attendance.setCheckOut(LocalTime.now());
-        attendanceRepository.save(attendance);
-        return "Checked Out Successfully";
-    }
 }
