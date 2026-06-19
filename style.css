@@ -1,158 +1,83 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
 }
 
 body{
-    height:100vh;
-
-    background:
-    linear-gradient(
-        rgba(7,24,50,0.75),
-        rgba(7,24,50,0.75)
-    ),
-    url("https://cdn.corenexis.com/files/c/9798958720.jpg");
-
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+background:#f4f4f4;
 }
 
-.container{
-    width:90%;
-    max-width:1400px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.sidebar{
+width:250px;
+height:100vh;
+background:#1e293b;
+position:fixed;
+padding:20px;
 }
 
-.left-panel{
-    color:white;
-    width:40%;
+.sidebar h2{
+color:white;
+margin-bottom:30px;
 }
 
-.left-panel h1{
-    font-size:60px;
-    letter-spacing:2px;
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:10px;
+margin:10px 0;
 }
 
-.left-panel h3{
-    color:#d9b16f;
-    margin-bottom:40px;
+.main{
+margin-left:270px;
+padding:20px;
 }
 
-.left-panel h2{
-    font-size:55px;
-    margin-bottom:20px;
+.cards{
+display:flex;
+gap:20px;
 }
 
-.left-panel p{
-    font-size:20px;
-    line-height:1.7;
-    margin-bottom:40px;
-}
-
-.features{
-    display:flex;
-    gap:50px;
-    font-size:20px;
+.card{
+background:white;
+padding:20px;
+width:250px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
 }
 
 .login-box{
-    width:500px;
-    background:white;
-    padding:45px;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.2);
+width:350px;
+margin:100px auto;
+background:white;
+padding:30px;
+border-radius:10px;
 }
 
-.login-box h2{
-    text-align:center;
-    margin-bottom:30px;
-    color:#12335b;
+.login-box input{
+width:100%;
+padding:10px;
+margin:10px 0;
 }
 
-.login-box span{
-    color:#c99d57;
+.login-box button{
+width:100%;
+padding:10px;
+background:#2563eb;
+color:white;
+border:none;
+cursor:pointer;
 }
 
-.input-box{
-    position:relative;
-    margin-bottom:20px;
+table{
+width:100%;
+background:white;
+margin-top:20px;
 }
 
-.input-box i{
-    position:absolute;
-    left:15px;
-    top:15px;
-    color:#777;
-}
-
-.input-box input{
-    width:100%;
-    padding:15px 15px 15px 45px;
-    border:1px solid #ddd;
-    border-radius:8px;
-    font-size:16px;
-}
-
-.options{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:20px;
-    font-size:14px;
-}
-
-.options a{
-    text-decoration:none;
-    color:#12335b;
-}
-
-button{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:8px;
-    background:#0d2d56;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-}
-
-button:hover{
-    opacity:.9;
-}
-
-.divider{
-    text-align:center;
-    margin:20px 0;
-    color:#666;
-}
-
-.google-btn{
-    background:white;
-    color:#12335b;
-    border:1px solid #ccc;
-}
-
-@media(max-width:991px){
-
-.container{
-    flex-direction:column;
-}
-
-.left-panel{
-    width:100%;
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.login-box{
-    width:100%;
-    max-width:500px;
-}
+table th,table td{
+padding:12px;
+border:1px solid #ddd;
 }
